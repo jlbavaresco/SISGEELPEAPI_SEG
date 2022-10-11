@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "87c54ebf-c60c-4245-824a-73cdb3c9e364",
+		"name": "API_LPE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET PREDIOS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbF91c3VhcmlvIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwibm9tZV91c3VhcmlvIjoiSm9yZ2UgQmF2YXJlc2NvIiwiaWF0IjoxNjY1NTEwMzg1LCJleHAiOjE2NjU1MTA2ODV9.qzSoAWgu4ne2ZBgBFFnkxkABtnSL_vUTXE22DuNojUs",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3002/predios",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Predios",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbF91c3VhcmlvIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwibm9tZV91c3VhcmlvIjoiSm9yZ2UgQmF2YXJlc2NvIiwiaWF0IjoxNjY1NTEwMzg1LCJleHAiOjE2NjU1MTA2ODV9.qzSoAWgu4ne2ZBgBFFnkxkABtnSL_vUTXE22DuNojUs",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\":\"Prédio 5\", \"descricao\":\"Computação\", \"sigla\": \"P5\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/predios",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update predios",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbF91c3VhcmlvIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwibm9tZV91c3VhcmlvIjoiSm9yZ2UgQmF2YXJlc2NvIiwiaWF0IjoxNjY1NTEwMzg1LCJleHAiOjE2NjU1MTA2ODV9.qzSoAWgu4ne2ZBgBFFnkxkABtnSL_vUTXE22DuNojUs",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"codigo\": 6,\n        \"nome\": \"Prédio 3\",\n        \"descricao\": \"Mecanica\",\n        \"sigla\": \"P3\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/predios",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get predios por codigo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbF91c3VhcmlvIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwibm9tZV91c3VhcmlvIjoiSm9yZ2UgQmF2YXJlc2NvIiwiaWF0IjoxNjY1NTEwNDU0LCJleHAiOjE2NjU1MTA3NTR9.1zcFctkcCy9fXxXU8YAZ2Bu-2J_rCoew_8xyoRRdHmw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3002/predios/6",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios",
+						"6"
+					],
+					"query": [
+						{
+							"key": "x-access-token",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete predio",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbF91c3VhcmlvIjoiam9yZ2ViYXZhcmVzY29AaWZzdWwuZWR1LmJyIiwibm9tZV91c3VhcmlvIjoiSm9yZ2UgQmF2YXJlc2NvIiwiaWF0IjoxNjY1NTEwNDU0LCJleHAiOjE2NjU1MTA3NTR9.1zcFctkcCy9fXxXU8YAZ2Bu-2J_rCoew_8xyoRRdHmw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3002/predios/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"jorgebavaresco@ifsul.edu.br\",\"senha\":\"123456\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
